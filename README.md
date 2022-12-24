@@ -1,7 +1,7 @@
 # My Nvim configuration
 
 ## Languages
-This configuration works well for conding in the following languages:
+This configuration works well for coding in the following languages:
 
 - Elixir
 - Javascript

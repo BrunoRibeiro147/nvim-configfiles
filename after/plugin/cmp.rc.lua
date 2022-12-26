@@ -31,3 +31,14 @@ vim.cmd [[
   set completeopt=menuone,noinsert,noselect
   highlight! default link CmpItemKind CmpItemMenuDefault
 ]]
+
+
+-- Disable CMP for dart files (using CoC for Flutter)
+local autocmd = vim.api.nvim_create_autocmd
+
+autocmd("FileType", {
+  pattern = "dart",
+  callback = function()
+    require("cmp").setup.buffer { enabled = false }
+  end
+})

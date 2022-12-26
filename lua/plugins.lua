@@ -44,4 +44,7 @@ packer.startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- For git blame & browse
   use 'mhinz/vim-mix-format' -- Elixir: format on save
+  use 'dart-lang/dart-vim-plugin' -- Dart LSP
+  use { 'neoclide/coc.nvim', branch = 'release' }
+  use 'tpope/vim-fugitive'
 end)
